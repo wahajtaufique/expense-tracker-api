@@ -11,6 +11,7 @@ const incomeRoutes = require('./routes/income')
 const summaryRoutes = require('./routes/summary')
 const swaggerUI = require("swagger-ui-express");
 const swaggerJsDoc = require("swagger-jsdoc");
+const cors = require('cors')
 
 mongoose.connect(process.env.MONGODBURL, { useNewUrlParser: true })
 const db = mongoose.connection
@@ -55,6 +56,7 @@ app.use('/api/roles', roleRoutes);
 app.use('/api/expense', expenseRoutes);
 app.use('/api/income', incomeRoutes);
 app.use('/api/summary', summaryRoutes);
+app.use(cors());
 
 // Passport middleware
 app.use(passport.initialize());
