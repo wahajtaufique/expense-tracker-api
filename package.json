@@ -22,9 +22,7 @@
     "swagger-jsdoc": "^6.2.5",
     "swagger-ui-express": "^4.5.0",
     "winston": "^3.8.2",
-    "winston-mongodb": "^5.1.0"
-  },
-  "devDependencies": {
+    "winston-mongodb": "^5.1.0",
     "dotenv": "^8.0.0",
     "nodemon": "^1.19.0"
   }
